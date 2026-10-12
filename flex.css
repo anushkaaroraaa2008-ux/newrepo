@@ -1,0 +1,29 @@
+{
+    padding: 0;
+    margin: 0;
+}
+.flexContainer {
+    height: 90vh;
+    border: 2px solid black;
+    display: flex;
+    /*justify-content: flex-start: */
+    /* justify-content: flex-end */
+    /* justify-content: center; */
+    /* justify-content: space-around: */
+    /*justify-content: space-between: */
+    /*justify-content: space-evenly: */
+    /*justify-content: flex-start: */
+    /* align-items: flex-start; */
+    /* align-items: center; *
+    /* align-items: flex-end; */
+              
+    
+}
+
+.flexItem {
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    colour: red;
+    background-colour: yellow;
+}

@@ -1,0 +1,106 @@
+/*
+selector{
+property::-ms-value
+}
+*/
+/* 1. Universal Selector (*) */
+* {
+    border: 1px solid black;
+}
+
+/* Tag Selector */
+/* to apply some css on multiple same tag */
+h1 {
+    colour: red;
+}
+
+/*class selector */
+/* to apply css on different multiple tags and we have to use attril class and assign same name to them and can write multiple classes */
+.a {
+    colour: blue;
+    font-size: 32px;
+}
+
+.b {
+    background-colour: green;
+
+}
+
+.a {
+    colour: blue;
+    font-size: 32px;
+}
+
+.b {
+    background-colour: green;
+}
+
+/*Id selector #anytime */
+/* for uniqueness and should apply on a single element without using single css */
+#c {
+    font-weight: 700;
+    colour: palevoiletred;
+}
+
+
+/* Group Selector , */
+/* just to give some css to multiple different tags in this we can use id,tag,class selector */
+h2,
+h3,
+.b,
+#c {
+  /*  colour: red; */
+}
+/* descendant selector */
+#f p {
+    colour : yellow;
+    font-size : 28px;
+    font-weight : 700;
+    background-colour: red;
+
+}
+/* child selector >*/
+/* to give css to direct child only */
+
+
+
+#f >p {
+    /* colour: red;
+    border: 1px solid yellow;
+    font-size: 32px;*/
+}
+/*pseudo Elements : */
+li:nth-child(even) {
+    color: red;
+    border: 1px solid yellow;
+    background-color:yellow;
+    font-size: 32px;
+}
+/* Pseudo Class :: */
+#pseudo::before {
+ content: "Hello this content is w
+}
+
+#pseudo::first-line {
+/*background-color: red; */
+/* color: red; */
+/* font-size: 24px; */
+}
+
+#pseudo::first-letter {
+   /* font-size: 48px; */
+  /*   font-weight: 700; */
+}
+
+#pseudo {
+    border: 2px solid black;
+    /* padding is used for giving space between content and border
+    /* using single means it will apply */
+
+
+
+
+padding: 30px 88px 78px 100px
+    
+}
+

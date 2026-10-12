@@ -1,0 +1,156 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="brand">DashBoard</div>
+      <nav class="side-nav">
+        <a class="active" href="#">⌂ <span>Dashboard</span></a>
+        <a href="#">▣ <span>Analytics</span></a>
+        <a href="#">◫ <span>Orders</span></a>
+        <a href="#">♙ <span>Customers</span></a>
+        <a href="#">⚙ <span>Settings</span></a>
+      </nav>
+      <div class="sidebar-footer">© 2026 Dashboard</div>
+    </aside>
+
+    <header class="header">
+      <div class="header-left">
+        <button class="menu-btn" aria-label="Menu">☰</button>
+        <div>
+          <h1>Dashboard</h1>
+          <p>Welcome back! Here's what's happening today.</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <label class="search">
+          <span>⌕</span>
+          <input type="search" placeholder="Search...">
+        </label>
+        <div class="profile">
+          <div class="avatar">AA</div>
+          <div class="profile-text">
+            <strong>Anushka</strong>
+            <small>Student</small>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="cards" aria-label="Statistics">
+        <article class="card">
+          <div class="card-icon">👥</div>
+          <div>
+            <p>Users</p>
+            <h2>12,480</h2>
+            <span class="positive">+8.2% this month</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">₹</div>
+          <div>
+            <p>Revenue</p>
+            <h2>₹84,560</h2>
+            <span class="positive">+12.5% this month</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🛒</div>
+          <div>
+            <p>Orders</p>
+            <h2>3,240</h2>
+            <span class="positive">+5.7% this month</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">↗</div>
+          <div>
+            <p>Growth</p>
+            <h2>18.4%</h2>
+            <span class="positive">+3.1% this month</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel chart-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Performance Overview</h2>
+              <p>Monthly performance</p>
+            </div>
+            <select aria-label="Time period">
+              <option>Last 6 months</option>
+              <option>Last 12 months</option>
+            </select>
+          </div>
+          <div class="chart">
+            <div class="y-axis"><span>100</span><span>75</span><span>50</span><span>25</span><span>0</span></div>
+            <div class="chart-area">
+              <div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="bars">
+                <div style="--h:42%"><b>Jan</b></div>
+                <div style="--h:58%"><b>Feb</b></div>
+                <div style="--h:51%"><b>Mar</b></div>
+                <div style="--h:70%"><b>Apr</b></div>
+                <div style="--h:64%"><b>May</b></div>
+                <div style="--h:86%"><b>Jun</b></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel activity-panel">
+          <div class="panel-heading">
+            <div>
+              <h2>Recent Activity</h2>
+              <p>Latest updates</p>
+            </div>
+          </div>
+          <ul class="activity-list">
+            <li><span class="activity-dot"></span><div><strong>New order received</strong><small>Order #1048 · 10 min ago</small></div></li>
+            <li><span class="activity-dot"></span><div><strong>New user registered</strong><small>Rahul joined · 35 min ago</small></div></li>
+            <li><span class="activity-dot"></span><div><strong>Payment completed</strong><small>₹8,500 received · 1 hr ago</small></div></li>
+            <li><span class="activity-dot"></span><div><strong>Profile updated</strong><small>Account settings changed · 2 hrs ago</small></div></li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="panel-heading">
+          <div>
+            <h2>Recent Orders</h2>
+            <p>Latest customer transactions</p>
+          </div>
+          <button class="view-btn">View All</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Order ID</th><th>Customer</th><th>Date</th><th>Amount</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>#1048</td><td>Rahul Sharma</td><td>13 Sep 2026</td><td>₹8,500</td><td><span class="status completed">Completed</span></td></tr>
+              <tr><td>#1047</td><td>Priya Singh</td><td>13 Sep 2026</td><td>₹5,250</td><td><span class="status pending">Pending</span></td></tr>
+              <tr><td>#1046</td><td>Arjun Verma</td><td>12 Sep 2026</td><td>₹12,800</td><td><span class="status completed">Completed</span></td></tr>
+              <tr><td>#1045</td><td>Neha Gupta</td><td>12 Sep 2026</td><td>₹3,450</td><td><span class="status cancelled">Cancelled</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Header</title>
+    <style>
+         * { margin: 0; padding: 0; box-sizing: border-box;}
+         body {font-family: Arial, sans-serif;}
+         .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px24px;
+            background: #111827;
+            colour: white;
+         }
+
+         logo-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            object-fit: cover;
+            border: 2px solid white;
+         }
+         .nav-items li {
+            background: #374151;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+         }
+
+         /*Hidden by default, shown with flex on click */
+         .hidden {
+            display: none;
+         }
+         .show-flex {
+            display: none;
+         }
+
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <!--Left: Image-->
+        <img id="logo" src="https://via.placeholder.com/50" alt="Logo" class="logo-img" title="Click me">
+    </header>
+    /* <div> class="flexcontainer"> */
+       /* <div class="flexItem">Item 1</div> */
+        /* <div class="flexItem">Item 2</div> */
+      /*   <div class="flexItem">Item 3</div> */
+       /* <div class="flexItem">Item 4</div> */
+       /* <div class="flexItem">Item 5</div> */
+       /* <div class="flexItem">Item 6</div> */
+    </div>
+</body>
+</html>
+    

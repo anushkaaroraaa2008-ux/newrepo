@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height:90vh;
+    width:40%;
+    border:2px solid red;
+}
+p{
+    color :red;
+    background-colour:yellow;
+    font-weight:700;
+}
+.relative{
+    position:relative;
+
+}
+.absolute{
+    position:absolute;
+    right: 60px;
+    bottom: 20px;
+
+}
+.fixed{
+    position:fixed;
+    bottom:20px;
+    right:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

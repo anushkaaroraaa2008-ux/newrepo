@@ -1,0 +1,101 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.grid.container {
+height: 100vh;
+border: 1px solid black;
+display: grid;
+/* grid-template-column: 100px 150px 100px 250px; */
+/* grid-template-rows: 70px 150px 300px ; */
+ 
+grid-template-columns: repeat(3 , 1fr);
+ grid-template-rows: 70px 150px 300px ;
+ gap: 10px;
+
+}
+gridItem{
+    padding: 30px;
+    background-colour: yellow;
+    colour: red;
+    border: 1px solid red;
+}
+
+.gridItem:nth-child(1) {
+    /* grid-column-start: 1;
+     grid-column-end: -1;
+     grid-row-start: 2;
+     grid-row-end: -2; */
+     grid-column: 1/-1;
+     grid-row: 2/-2;
+
+
+}
+
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-column: 1fr , 3fr , 1fr;
+    grid-template-rows: 50px, 1fr, 50px;
+    grid-template-areas:
+    "head head head"
+    "aside main navbar"
+
+
+
+
+}
+
+header{
+    grid-area: head;
+    background-colour: aquamarine;
+    font: weight 70px;
+    text-align: center;
+
+}
+
+nav{
+    grid-area: navbar;
+    background-colour: rgb(136, 30, 97);
+    font: weight 70px;
+    text-align: center;
+   <div>  anushka arora anushka arora>
+    
+
+}
+
+main{
+    grid-area: main;
+    background-colour: rgb(113, 23, 104);
+    font: weight 70px;
+    text-align: center;
+}
+
+aside{
+    background-colour: rgb(178, 58, 178);
+    font: weight 70px;
+    text-align: center;
+}
+
+footer{
+    background-colour: rgb(213, 77, 127);
+    font: weight 70px;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    .layout {
+        grid-complate-column: 1fr , 3fr;
+        grid-complate-areas:
+        "head head"
+        "aside main"
+
+    }
+}
+
+
+
+
+
+
+
